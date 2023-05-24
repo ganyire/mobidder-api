@@ -1,0 +1,33 @@
+{
+    "message": "Account created successfully",
+    "payload": {
+        "id": "01gzdvv25az6qyhgbm1jv0qa44",
+        "email": "vincent35@wolff.com",
+        "name": "Wendell Heller II",
+        "phone": "+17372801899",
+        "accountIsLocked": null,
+        "emailIsVerified": false,
+        "created_at": {
+            "for_human": "1 second ago",
+            "for_machine": "2023-05-02 09:14:04"
+        },
+        "role": {
+            "name": "vendor-admin",
+            "display_name": "Vendor Admin",
+            "description": "{DESCRIPTION_OF_THE_ROLE}"
+        },
+        "address": {
+            "id": "01gzdvv25epfw3h32zv7ksvjd7",
+            "street": "1234 Main St",
+            "city": "Nairobi",
+            "state": "Nairobi",
+            "country": "Kenya",
+            "zip_code": "00100",
+            "created_at": {
+                "for_human": "1 second ago",
+                "for_machine": "2023-05-02 09:14:04"
+            }
+        },
+        "token": "2|e8eNukBzJrk8JVWi79SXdDUWF0KysDG1fkwdIjXU"
+    }
+}

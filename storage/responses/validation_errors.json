@@ -1,0 +1,7 @@
+{
+    "message": "Invalid data encountered",
+    "payload": {
+        "{FIELD_1}": "{Validation error for {FIELD_1}}",
+        "{FIELD_2}": "{Validation error for {FIELD_2}}"
+    }
+}

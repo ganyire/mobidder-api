@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Regular";
+    src: url("./fonts/inter/InterTight.ttf");
+}
+
+@font-face {
+    font-family: "Italic";
+    src: url("./fonts/inter/InterTight-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url("./fonts/inter/InterTight-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BoldItalic";
+    src: url("./fonts/inter/InterTight-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Light";
+    src: url("./fonts/inter/InterTight-Light.ttf");
+}
+
+@font-face {
+    font-family: "LightItalicc";
+    src: url("./fonts/inter/InterTight-LightItalic.ttf");
+}
