@@ -21,8 +21,6 @@ test('new users can register', function () {
 
     $response = postJson("{$this->baseUrl}/auth/register");
 
-    dd($response->json());
-
     $notifiable = User::find($response->json('payload.id'));
     Notification::assertSentTo(
         $notifiable,

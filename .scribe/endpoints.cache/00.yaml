@@ -30,14 +30,14 @@ endpoints:
         name: name
         description: 'The name of the user. Must not be greater than 255 characters.'
         required: true
-        example: 'Bailey Yost'
+        example: 'Prof. Retha Hegmann II'
         type: string
         custom: []
       email:
         name: email
         description: 'The email of the user. Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: bzboncak@hotmail.com
+        example: hill.kathleen@johns.com
         type: string
         custom: []
       password:
@@ -58,7 +58,7 @@ endpoints:
         name: phone
         description: 'The phone number of the user. Must not be greater than 255 characters.'
         required: false
-        example: '+14049264334'
+        example: '+13514607966'
         type: string
         custom: []
       role:
@@ -104,11 +104,11 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: 'Bailey Yost'
-      email: bzboncak@hotmail.com
+      name: 'Prof. Retha Hegmann II'
+      email: hill.kathleen@johns.com
       password: Lenny@007
       password_confirmation: Lenny@007
-      phone: '+14049264334'
+      phone: '+13514607966'
       role: vendor-admin
       street: '1234 Main St'
       city: Nairobi
@@ -210,7 +210,7 @@ endpoints:
         name: email
         description: 'The email credential. Must be a valid email address.'
         required: true
-        example: schinner.fidel@example.org
+        example: tracy.zboncak@example.net
         type: string
         custom: []
       password:
@@ -221,7 +221,7 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      email: schinner.fidel@example.org
+      email: tracy.zboncak@example.net
       password: Lenny@007
     fileParameters: []
     responses:
@@ -306,7 +306,7 @@ endpoints:
       authenticated: true
       custom: []
     headers:
-      Authorization: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+      Authorization: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -341,7 +341,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3adcabPk5gVEf6vD68hZe14'
+      - 'Bearer DVva6hbfgEd14eZ5c63aP8k'
     controller: null
     method: null
     route: null
@@ -362,7 +362,7 @@ endpoints:
       authenticated: true
       custom: []
     headers:
-      Authorization: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+      Authorization: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -395,7 +395,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3Zf1heakgaV8vEb46d5cP6D'
+      - 'Bearer e3fcDh4ZVbgd6568aP1Eakv'
     controller: null
     method: null
     route: null
@@ -416,7 +416,7 @@ endpoints:
       authenticated: true
       custom: []
     headers:
-      Authorization: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+      Authorization: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -481,7 +481,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer De8fPZ6Ehg51ab6dkv43acV'
+      - 'Bearer v8hZfga35cekV4dEbD66aP1'
     controller: null
     method: null
     route: null
@@ -502,7 +502,7 @@ endpoints:
       authenticated: true
       custom: []
     headers:
-      Authorization: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+      Authorization: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -514,19 +514,19 @@ endpoints:
         name: email
         description: 'New email address to set. Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: hauck.jasen@example.org
+        example: dbashirian@example.net
         type: string
         custom: []
       password:
         name: password
         description: "User's current password."
         required: true
-        example: "v{4YgED'_BhW=D~Rpb"
+        example: "IN@U'3BEevv@acg"
         type: string
         custom: []
     cleanBodyParameters:
-      email: hauck.jasen@example.org
-      password: "v{4YgED'_BhW=D~Rpb"
+      email: dbashirian@example.net
+      password: "IN@U'3BEevv@acg"
     fileParameters: []
     responses:
       -
@@ -543,7 +543,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1kaPfdcb38Zv45e6EDhVa6g'
+      - 'Bearer acDVZ5b8vPd3h6g61k4Eeaf'
     controller: null
     method: null
     route: null
@@ -573,11 +573,11 @@ endpoints:
         name: email
         description: 'The email address of the user. Must be a valid email address.'
         required: true
-        example: hester92@example.net
+        example: scummings@example.net
         type: string
         custom: []
     cleanBodyParameters:
-      email: hester92@example.net
+      email: scummings@example.net
     fileParameters: []
     responses:
       -
@@ -619,7 +619,7 @@ endpoints:
       authenticated: true
       custom: []
     headers:
-      Authorization: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+      Authorization: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -631,35 +631,35 @@ endpoints:
         name: email
         description: 'Email. Must be a valid email address.'
         required: true
-        example: karlee.terry@example.com
+        example: mschoen@example.net
         type: string
         custom: []
       password:
         name: password
         description: Password.
         required: true
-        example: "E~WKhp|#'F"
+        example: Z@e^|+YX%x
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'Password confirmation.'
         required: true
-        example: "E~WKhp|#'F"
+        example: Z@e^|+YX%x
         type: string
         custom: []
       token:
         name: token
         description: 'Token that you received in your email.'
         required: true
-        example: 5301669d-eacb-3c25-bd9b-78ab7d62e5fa
+        example: 96bd96e7-1bc0-3446-9d65-df95358cf73e
         type: string
         custom: []
     cleanBodyParameters:
-      email: karlee.terry@example.com
-      password: "E~WKhp|#'F"
-      password_confirmation: "E~WKhp|#'F"
-      token: 5301669d-eacb-3c25-bd9b-78ab7d62e5fa
+      email: mschoen@example.net
+      password: Z@e^|+YX%x
+      password_confirmation: Z@e^|+YX%x
+      token: 96bd96e7-1bc0-3446-9d65-df95358cf73e
     fileParameters: []
     responses:
       -
@@ -682,7 +682,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8EgZ3dPcf6k1v64eahDV5ab'
+      - 'Bearer 34kE66a815gZevfVcdbDPha'
     controller: null
     method: null
     route: null
@@ -701,7 +701,7 @@ endpoints:
       authenticated: true
       custom: []
     headers:
-      Authorization: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+      Authorization: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -726,7 +726,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer efbgZv6E6aP58h4k3dcaVD1'
+      - 'Bearer P16ZD5E8vgkfb6ead43hcaV'
     controller: null
     method: null
     route: null

@@ -178,11 +178,11 @@ paths:
                 name:
                   type: string
                   description: 'The name of the user. Must not be greater than 255 characters.'
-                  example: 'Bailey Yost'
+                  example: 'Prof. Retha Hegmann II'
                 email:
                   type: string
                   description: 'The email of the user. Must be a valid email address. Must not be greater than 255 characters.'
-                  example: bzboncak@hotmail.com
+                  example: hill.kathleen@johns.com
                 password:
                   type: string
                   description: 'The password of the user.'
@@ -194,7 +194,7 @@ paths:
                 phone:
                   type: string
                   description: 'The phone number of the user. Must not be greater than 255 characters.'
-                  example: '+14049264334'
+                  example: '+13514607966'
                 role:
                   type: string
                   description: 'The role of the user. Must be one of <code>super-admin</code>, <code>vendor</code>, <code>customer</code>, or <code>vendor-admin</code> Must not be greater than 255 characters.'
@@ -389,7 +389,7 @@ paths:
                 email:
                   type: string
                   description: 'The email credential. Must be a valid email address.'
-                  example: schinner.fidel@example.org
+                  example: tracy.zboncak@example.net
                 password:
                   type: string
                   description: 'The password of the user.'
@@ -408,7 +408,7 @@ paths:
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
       responses:
@@ -456,7 +456,7 @@ paths:
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
       responses:
@@ -501,7 +501,7 @@ paths:
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
       responses:
@@ -579,7 +579,7 @@ paths:
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
       responses:
@@ -611,11 +611,11 @@ paths:
                 email:
                   type: string
                   description: 'New email address to set. Must be a valid email address. Must not be greater than 255 characters.'
-                  example: hauck.jasen@example.org
+                  example: dbashirian@example.net
                 password:
                   type: string
                   description: "User's current password."
-                  example: "v{4YgED'_BhW=D~Rpb"
+                  example: "IN@U'3BEevv@acg"
               required:
                 - email
                 - password
@@ -661,7 +661,7 @@ paths:
                 email:
                   type: string
                   description: 'The email address of the user. Must be a valid email address.'
-                  example: hester92@example.net
+                  example: scummings@example.net
               required:
                 - email
       security: []
@@ -675,7 +675,7 @@ paths:
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
       responses:
@@ -714,19 +714,19 @@ paths:
                 email:
                   type: string
                   description: 'Email. Must be a valid email address.'
-                  example: karlee.terry@example.com
+                  example: mschoen@example.net
                 password:
                   type: string
                   description: Password.
-                  example: "E~WKhp|#'F"
+                  example: Z@e^|+YX%x
                 password_confirmation:
                   type: string
                   description: 'Password confirmation.'
-                  example: "E~WKhp|#'F"
+                  example: Z@e^|+YX%x
                 token:
                   type: string
                   description: 'Token that you received in your email.'
-                  example: 5301669d-eacb-3c25-bd9b-78ab7d62e5fa
+                  example: 96bd96e7-1bc0-3446-9d65-df95358cf73e
               required:
                 - email
                 - password
@@ -742,7 +742,7 @@ paths:
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
       responses:
@@ -774,7 +774,7 @@ paths:
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
       responses:
@@ -786,10 +786,10 @@ paths:
                 type: object
                 example:
                   id: null
-                  name: Howe-Witting
-                  email: jose97@goodwin.com
-                  phone: '+14302419697'
-                  website: 'http://www.torp.org/quae-nisi-non-perspiciatis-quo.html'
+                  name: 'Zulauf, Corkery and Gislason'
+                  email: gfay@hills.com
+                  phone: '+19599597385'
+                  website: 'http://conroy.info/'
                   logo: null
                   created_at: null
                 properties:
@@ -798,16 +798,16 @@ paths:
                     example: null
                   name:
                     type: string
-                    example: Howe-Witting
+                    example: 'Zulauf, Corkery and Gislason'
                   email:
                     type: string
-                    example: jose97@goodwin.com
+                    example: gfay@hills.com
                   phone:
                     type: string
-                    example: '+14302419697'
+                    example: '+19599597385'
                   website:
                     type: string
-                    example: 'http://www.torp.org/quae-nisi-non-perspiciatis-quo.html'
+                    example: 'http://conroy.info/'
                   logo:
                     type: string
                     example: null
@@ -826,19 +826,19 @@ paths:
                 name:
                   type: string
                   description: 'Business name. Must not be greater than 255 characters.'
-                  example: 'Reichert PLC'
+                  example: Erdman-Adams
                 email:
                   type: string
                   description: 'Business email. Must be a valid email address. Must not be greater than 255 characters.'
-                  example: dandre.hauck@shields.com
+                  example: stroman.elizabeth@schowalter.com
                 phone:
                   type: string
                   description: 'Business phone number. Must not be greater than 255 characters.'
-                  example: 458-442-3517
+                  example: 315-329-3672
                 website:
                   type: string
                   description: 'Business website. Must be a valid URL. Must not be greater than 255 characters.'
-                  example: 'http://brakus.com/'
+                  example: 'http://www.satterfield.com/non-vero-doloremque-atque-qui-ut'
                 logo:
                   type: string
                   format: binary
@@ -846,23 +846,23 @@ paths:
                 street:
                   type: string
                   description: 'Business address: street.'
-                  example: '8237 Nikolaus Port'
+                  example: '807 Sadie Inlet'
                 city:
                   type: string
                   description: 'Business address: city. This field is required when <code>street</code> is present.'
-                  example: Erniefurt
+                  example: 'North Russell'
                 state:
                   type: string
                   description: 'Business address: state or province.'
-                  example: qui
+                  example: et
                 zip_code:
                   type: string
                   description: 'Business address: zip code.'
-                  example: '09172'
+                  example: 31219-8671
                 country:
                   type: string
                   description: 'Business address: country. This field is required when <code>street</code> is present.'
-                  example: Grenada
+                  example: Greece
               required:
                 - name
                 - email
@@ -870,16 +870,100 @@ paths:
     post:
       summary: 'Create new product category'
       operationId: createNewProductCategory
-      description: ''
+      description: 'Endpoint for creating a new product category.'
       parameters:
         -
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
-      responses: {  }
+      responses:
+        201:
+          description: 'successful creation'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Category created successfully'
+                  payload:
+                    id: 01h1pg5sfcvm8crrx6qpn2eqfb
+                    name: FMG
+                    slug: fmg
+                    description: 'Quidem incidunt impedit quis aut veritatis ut.'
+                    created_at:
+                      for_human: '1 second ago'
+                      for_machine: '2023-05-30 14:14:46'
+                properties:
+                  message:
+                    type: string
+                    example: 'Category created successfully'
+                  payload:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: 01h1pg5sfcvm8crrx6qpn2eqfb
+                      name:
+                        type: string
+                        example: FMG
+                      slug:
+                        type: string
+                        example: fmg
+                      description:
+                        type: string
+                        example: 'Quidem incidunt impedit quis aut veritatis ut.'
+                      created_at:
+                        type: object
+                        properties:
+                          for_human:
+                            type: string
+                            example: '1 second ago'
+                          for_machine:
+                            type: string
+                            example: '2023-05-30 14:14:46'
+        400:
+          description: 'generic error (400-500)'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: '{ERROR_MESSAGE}'
+                  payload: null
+                properties:
+                  message:
+                    type: string
+                    example: '{ERROR_MESSAGE}'
+                  payload:
+                    type: string
+                    example: null
+        422:
+          description: 'validation errors'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Invalid data encountered'
+                  payload:
+                    '{FIELD_1}': '{Validation error for {FIELD_1}}'
+                    '{FIELD_2}': '{Validation error for {FIELD_2}}'
+                properties:
+                  message:
+                    type: string
+                    example: 'Invalid data encountered'
+                  payload:
+                    type: object
+                    properties:
+                      '{FIELD_1}':
+                        type: string
+                        example: '{Validation error for {FIELD_1}}'
+                      '{FIELD_2}':
+                        type: string
+                        example: '{Validation error for {FIELD_2}}'
       tags:
         - CATEGORY
       requestBody:
@@ -896,23 +980,287 @@ paths:
                 description:
                   type: string
                   description: 'The description of the category.'
-                  example: 'Animi nihil sapiente quia animi architecto ea veritatis.'
+                  example: 'Cumque recusandae et laudantium et hic omnis doloribus.'
               required:
                 - name
+    get:
+      summary: 'Get all product categories'
+      operationId: getAllProductCategories
+      description: 'Endpoint for retrieving all product categories.'
+      parameters:
+        -
+          in: query
+          name: per_page
+          description: 'The number of items to return per page.'
+          example: 2
+          required: false
+          schema:
+            type: integer
+            description: 'The number of items to return per page.'
+            example: 2
+        -
+          in: query
+          name: page
+          description: 'The page number.'
+          example: 1
+          required: false
+          schema:
+            type: integer
+            description: 'The page number.'
+            example: 1
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: null
+                  payload:
+                    categories:
+                      -
+                        id: 01h27v3kgj3fqwhprr2xbrkz9c
+                        name: Manufacturing
+                        slug: manufacturing
+                        created_at:
+                          for_human: '5 hours ago'
+                          for_machine: '2023-06-06 07:52:54'
+                      -
+                        id: 01h27v3s91gry5cr9kvt6m5rzq
+                        name: Farming
+                        slug: farming
+                        created_at:
+                          for_human: '5 hours ago'
+                          for_machine: '2023-06-06 07:53:00'
+                    pagination:
+                      total: 5
+                      current_page_total: 2
+                      per_page: 2
+                      current_page: 1
+                      has_more_pages: true
+                properties:
+                  message:
+                    type: string
+                    example: null
+                  payload:
+                    type: object
+                    properties:
+                      categories:
+                        type: array
+                        example:
+                          -
+                            id: 01h27v3kgj3fqwhprr2xbrkz9c
+                            name: Manufacturing
+                            slug: manufacturing
+                            created_at:
+                              for_human: '5 hours ago'
+                              for_machine: '2023-06-06 07:52:54'
+                          -
+                            id: 01h27v3s91gry5cr9kvt6m5rzq
+                            name: Farming
+                            slug: farming
+                            created_at:
+                              for_human: '5 hours ago'
+                              for_machine: '2023-06-06 07:53:00'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              example: 01h27v3kgj3fqwhprr2xbrkz9c
+                            name:
+                              type: string
+                              example: Manufacturing
+                            slug:
+                              type: string
+                              example: manufacturing
+                            created_at:
+                              type: object
+                              properties:
+                                for_human:
+                                  type: string
+                                  example: '5 hours ago'
+                                for_machine:
+                                  type: string
+                                  example: '2023-06-06 07:52:54'
+                      pagination:
+                        type: object
+                        properties:
+                          total:
+                            type: integer
+                            example: 5
+                          current_page_total:
+                            type: integer
+                            example: 2
+                          per_page:
+                            type: integer
+                            example: 2
+                          current_page:
+                            type: integer
+                            example: 1
+                          has_more_pages:
+                            type: boolean
+                            example: true
+        400:
+          description: 'generic error (400-500)'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: '{ERROR_MESSAGE}'
+                  payload: null
+                properties:
+                  message:
+                    type: string
+                    example: '{ERROR_MESSAGE}'
+                  payload:
+                    type: string
+                    example: null
+      tags:
+        - CATEGORY
   /api/v1/products:
     post:
       summary: 'Create product'
       operationId: createProduct
-      description: ''
+      description: 'Endpoint for creating a new product.'
       parameters:
         -
           in: header
           name: Authorization
           description: ''
-          example: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+          example: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
           schema:
             type: string
-      responses: {  }
+      responses:
+        201:
+          description: 'successful creation'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Product created successfully'
+                  payload:
+                    id: 01h1pg6bn3svmb7w13rptdr09q
+                    name: porro
+                    average_price: '100'
+                    unit_of_measure: kg
+                    description: 'Consequuntur et numquam omnis magnam iure dolores sint.'
+                    created_at:
+                      for_human: '1 second ago'
+                      for_machine: '2023-05-30 14:15:05'
+                    category:
+                      id: 01h1pg5sfcvm8crrx6qpn2eqfb
+                      name: FMG
+                      slug: fmg
+                      description: 'Quidem incidunt impedit quis aut veritatis ut.'
+                      created_at:
+                        for_human: '19 seconds ago'
+                        for_machine: '2023-05-30 14:14:46'
+                properties:
+                  message:
+                    type: string
+                    example: 'Product created successfully'
+                  payload:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: 01h1pg6bn3svmb7w13rptdr09q
+                      name:
+                        type: string
+                        example: porro
+                      average_price:
+                        type: string
+                        example: '100'
+                      unit_of_measure:
+                        type: string
+                        example: kg
+                      description:
+                        type: string
+                        example: 'Consequuntur et numquam omnis magnam iure dolores sint.'
+                      created_at:
+                        type: object
+                        properties:
+                          for_human:
+                            type: string
+                            example: '1 second ago'
+                          for_machine:
+                            type: string
+                            example: '2023-05-30 14:15:05'
+                      category:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            example: 01h1pg5sfcvm8crrx6qpn2eqfb
+                          name:
+                            type: string
+                            example: FMG
+                          slug:
+                            type: string
+                            example: fmg
+                          description:
+                            type: string
+                            example: 'Quidem incidunt impedit quis aut veritatis ut.'
+                          created_at:
+                            type: object
+                            properties:
+                              for_human:
+                                type: string
+                                example: '19 seconds ago'
+                              for_machine:
+                                type: string
+                                example: '2023-05-30 14:14:46'
+        400:
+          description: 'generic error (400-500)'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: '{ERROR_MESSAGE}'
+                  payload: null
+                properties:
+                  message:
+                    type: string
+                    example: '{ERROR_MESSAGE}'
+                  payload:
+                    type: string
+                    example: null
+        422:
+          description: 'validation errors'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Invalid data encountered'
+                  payload:
+                    '{FIELD_1}': '{Validation error for {FIELD_1}}'
+                    '{FIELD_2}': '{Validation error for {FIELD_2}}'
+                properties:
+                  message:
+                    type: string
+                    example: 'Invalid data encountered'
+                  payload:
+                    type: object
+                    properties:
+                      '{FIELD_1}':
+                        type: string
+                        example: '{Validation error for {FIELD_1}}'
+                      '{FIELD_2}':
+                        type: string
+                        example: '{Validation error for {FIELD_2}}'
       tags:
         - PRODUCT
       requestBody:
@@ -925,7 +1273,7 @@ paths:
                 name:
                   type: string
                   description: 'The name of the product. Must not be greater than 255 characters.'
-                  example: commodi
+                  example: aut
                 average_price:
                   type: number
                   description: 'The average price of the product.'
@@ -933,7 +1281,7 @@ paths:
                 description:
                   type: string
                   description: 'The description of the product.'
-                  example: 'Exercitationem qui ex architecto distinctio iure quis a ea.'
+                  example: 'Et voluptates modi est esse.'
                 unit_of_measure:
                   type: string
                   description: 'The unit of measure of the product. Must not be greater than 255 characters.'
@@ -941,7 +1289,7 @@ paths:
                 category_id:
                   type: string
                   description: 'The category id of the product.'
-                  example: 5820a78e-930e-32fc-8b50-68c6b0987aa9
+                  example: 5912c4cb-950a-37a4-91bf-d5354a7d181c
               required:
                 - name
                 - average_price

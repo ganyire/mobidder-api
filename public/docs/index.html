@@ -125,6 +125,9 @@
                                                     <li class="tocify-item level-2" data-unique="category-POSTapi-v1-categories">
                                 <a href="#category-POSTapi-v1-categories">Create new product category</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="category-GETapi-v1-categories">
+                                <a href="#category-GETapi-v1-categories">Get all product categories</a>
+                            </li>
                                                                         </ul>
                             </ul>
                     <ul id="tocify-header-product" class="tocify-header">
@@ -146,7 +149,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: May 4, 2023</li>
+        <li>Last updated: June 6, 2023</li>
     </ul>
 </div>
 
@@ -163,7 +166,7 @@
 You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).</aside>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
-<p>To authenticate requests, include an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"</code></strong>.</p>
+<p>To authenticate requests, include an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"</code></strong>.</p>
 <p>All authenticated endpoints are marked with a <code>requires authentication</code> badge in the documentation below.</p>
 <p>You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.</p>
 
@@ -193,11 +196,11 @@ const headers = {
 };
 
 let body = {
-    "name": "Bailey Yost",
-    "email": "bzboncak@hotmail.com",
+    "name": "Prof. Retha Hegmann II",
+    "email": "hill.kathleen@johns.com",
     "password": "Lenny@007",
     "password_confirmation": "Lenny@007",
-    "phone": "+14049264334",
+    "phone": "+13514607966",
     "role": "vendor-admin",
     "street": "1234 Main St",
     "city": "Nairobi",
@@ -223,11 +226,11 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'Bailey Yost',
-            'email' =&gt; 'bzboncak@hotmail.com',
+            'name' =&gt; 'Prof. Retha Hegmann II',
+            'email' =&gt; 'hill.kathleen@johns.com',
             'password' =&gt; 'Lenny@007',
             'password_confirmation' =&gt; 'Lenny@007',
-            'phone' =&gt; '+14049264334',
+            'phone' =&gt; '+13514607966',
             'role' =&gt; 'vendor-admin',
             'street' =&gt; '1234 Main St',
             'city' =&gt; 'Nairobi',
@@ -247,11 +250,11 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/auth/register'
 payload = {
-    "name": "Bailey Yost",
-    "email": "bzboncak@hotmail.com",
+    "name": "Prof. Retha Hegmann II",
+    "email": "hill.kathleen@johns.com",
     "password": "Lenny@007",
     "password_confirmation": "Lenny@007",
-    "phone": "+14049264334",
+    "phone": "+13514607966",
     "role": "vendor-admin",
     "street": "1234 Main St",
     "city": "Nairobi",
@@ -409,10 +412,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-v1-auth-register"
-               value="Bailey Yost"
+               value="Prof. Retha Hegmann II"
                data-component="body">
     <br>
-<p>The name of the user. Must not be greater than 255 characters. Example: <code>Bailey Yost</code></p>
+<p>The name of the user. Must not be greater than 255 characters. Example: <code>Prof. Retha Hegmann II</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -420,10 +423,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-auth-register"
-               value="bzboncak@hotmail.com"
+               value="hill.kathleen@johns.com"
                data-component="body">
     <br>
-<p>The email of the user. Must be a valid email address. Must not be greater than 255 characters. Example: <code>bzboncak@hotmail.com</code></p>
+<p>The email of the user. Must be a valid email address. Must not be greater than 255 characters. Example: <code>hill.kathleen@johns.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -453,10 +456,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-v1-auth-register"
-               value="+14049264334"
+               value="+13514607966"
                data-component="body">
     <br>
-<p>The phone number of the user. Must not be greater than 255 characters. Example: <code>+14049264334</code></p>
+<p>The phone number of the user. Must not be greater than 255 characters. Example: <code>+13514607966</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -548,7 +551,7 @@ const headers = {
 };
 
 let body = {
-    "email": "schinner.fidel@example.org",
+    "email": "tracy.zboncak@example.net",
     "password": "Lenny@007"
 };
 
@@ -569,7 +572,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'schinner.fidel@example.org',
+            'email' =&gt; 'tracy.zboncak@example.net',
             'password' =&gt; 'Lenny@007',
         ],
     ]
@@ -584,7 +587,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/auth/login'
 payload = {
-    "email": "schinner.fidel@example.org",
+    "email": "tracy.zboncak@example.net",
     "password": "Lenny@007"
 }
 headers = {
@@ -734,10 +737,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-auth-login"
-               value="schinner.fidel@example.org"
+               value="tracy.zboncak@example.net"
                data-component="body">
     <br>
-<p>The email credential. Must be a valid email address. Example: <code>schinner.fidel@example.org</code></p>
+<p>The email credential. Must be a valid email address. Example: <code>tracy.zboncak@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -770,7 +773,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -794,7 +797,7 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/auth/change-password',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
@@ -820,7 +823,7 @@ payload = {
     "password_confirmation": "Newpassword10"
 }
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -912,10 +915,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-auth-change-password"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -993,14 +996,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "email": "hauck.jasen@example.org",
-    "password": "v{4YgED'_BhW=D~Rpb"
+    "email": "dbashirian@example.net",
+    "password": "IN@U'3BEevv@acg"
 };
 
 fetch(url, {
@@ -1016,13 +1019,13 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/auth/change-email',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'hauck.jasen@example.org',
-            'password' =&gt; 'v{4YgED\'_BhW=D~Rpb',
+            'email' =&gt; 'dbashirian@example.net',
+            'password' =&gt; 'IN@U\'3BEevv@acg',
         ],
     ]
 );
@@ -1036,11 +1039,11 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/auth/change-email'
 payload = {
-    "email": "hauck.jasen@example.org",
-    "password": "v{4YgED'_BhW=D~Rpb"
+    "email": "dbashirian@example.net",
+    "password": "IN@U'3BEevv@acg"
 }
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -1115,10 +1118,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-auth-change-email"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1149,10 +1152,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-auth-change-email"
-               value="hauck.jasen@example.org"
+               value="dbashirian@example.net"
                data-component="body">
     <br>
-<p>New email address to set. Must be a valid email address. Must not be greater than 255 characters. Example: <code>hauck.jasen@example.org</code></p>
+<p>New email address to set. Must be a valid email address. Must not be greater than 255 characters. Example: <code>dbashirian@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1160,10 +1163,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-v1-auth-change-email"
-               value="v{4YgED'_BhW=D~Rpb"
+               value="IN@U'3BEevv@acg"
                data-component="body">
     <br>
-<p>User's current password. Example: <code>v{4YgED'_BhW=D~Rpb</code></p>
+<p>User's current password. Example: <code>IN@U'3BEevv@acg</code></p>
         </div>
         </form>
 
@@ -1189,7 +1192,7 @@ const headers = {
 };
 
 let body = {
-    "email": "hester92@example.net"
+    "email": "scummings@example.net"
 };
 
 fetch(url, {
@@ -1209,7 +1212,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'hester92@example.net',
+            'email' =&gt; 'scummings@example.net',
         ],
     ]
 );
@@ -1223,7 +1226,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/auth/send-password-reset-code'
 payload = {
-    "email": "hester92@example.net"
+    "email": "scummings@example.net"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -1330,10 +1333,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-auth-send-password-reset-code"
-               value="hester92@example.net"
+               value="scummings@example.net"
                data-component="body">
     <br>
-<p>The email address of the user. Must be a valid email address. Example: <code>hester92@example.net</code></p>
+<p>The email address of the user. Must be a valid email address. Example: <code>scummings@example.net</code></p>
         </div>
         </form>
 
@@ -1355,16 +1358,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "email": "karlee.terry@example.com",
-    "password": "E~WKhp|#'F",
-    "password_confirmation": "E~WKhp|#'F",
-    "token": "5301669d-eacb-3c25-bd9b-78ab7d62e5fa"
+    "email": "mschoen@example.net",
+    "password": "Z@e^|+YX%x",
+    "password_confirmation": "Z@e^|+YX%x",
+    "token": "96bd96e7-1bc0-3446-9d65-df95358cf73e"
 };
 
 fetch(url, {
@@ -1380,15 +1383,15 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/auth/reset-password',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'karlee.terry@example.com',
-            'password' =&gt; 'E~WKhp|#\'F',
-            'password_confirmation' =&gt; 'E~WKhp|#\'F',
-            'token' =&gt; '5301669d-eacb-3c25-bd9b-78ab7d62e5fa',
+            'email' =&gt; 'mschoen@example.net',
+            'password' =&gt; 'Z@e^|+YX%x',
+            'password_confirmation' =&gt; 'Z@e^|+YX%x',
+            'token' =&gt; '96bd96e7-1bc0-3446-9d65-df95358cf73e',
         ],
     ]
 );
@@ -1402,13 +1405,13 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/auth/reset-password'
 payload = {
-    "email": "karlee.terry@example.com",
-    "password": "E~WKhp|#'F",
-    "password_confirmation": "E~WKhp|#'F",
-    "token": "5301669d-eacb-3c25-bd9b-78ab7d62e5fa"
+    "email": "mschoen@example.net",
+    "password": "Z@e^|+YX%x",
+    "password_confirmation": "Z@e^|+YX%x",
+    "token": "96bd96e7-1bc0-3446-9d65-df95358cf73e"
 }
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -1490,10 +1493,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-auth-reset-password"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1524,10 +1527,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-auth-reset-password"
-               value="karlee.terry@example.com"
+               value="mschoen@example.net"
                data-component="body">
     <br>
-<p>Email. Must be a valid email address. Example: <code>karlee.terry@example.com</code></p>
+<p>Email. Must be a valid email address. Example: <code>mschoen@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1535,10 +1538,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-v1-auth-reset-password"
-               value="E~WKhp|#'F"
+               value="Z@e^|+YX%x"
                data-component="body">
     <br>
-<p>Password. Example: <code>E~WKhp|#'F</code></p>
+<p>Password. Example: <code>Z@e^|+YX%x</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
@@ -1546,10 +1549,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password_confirmation"                data-endpoint="POSTapi-v1-auth-reset-password"
-               value="E~WKhp|#'F"
+               value="Z@e^|+YX%x"
                data-component="body">
     <br>
-<p>Password confirmation. Example: <code>E~WKhp|#'F</code></p>
+<p>Password confirmation. Example: <code>Z@e^|+YX%x</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>token</code></b>&nbsp;&nbsp;
@@ -1557,10 +1560,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="token"                data-endpoint="POSTapi-v1-auth-reset-password"
-               value="5301669d-eacb-3c25-bd9b-78ab7d62e5fa"
+               value="96bd96e7-1bc0-3446-9d65-df95358cf73e"
                data-component="body">
     <br>
-<p>Token that you received in your email. Example: <code>5301669d-eacb-3c25-bd9b-78ab7d62e5fa</code></p>
+<p>Token that you received in your email. Example: <code>96bd96e7-1bc0-3446-9d65-df95358cf73e</code></p>
         </div>
         </form>
 
@@ -1582,7 +1585,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1599,7 +1602,7 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/auth/refresh-token',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
@@ -1615,7 +1618,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/auth/refresh-token'
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -1690,10 +1693,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-auth-refresh-token"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1741,7 +1744,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1758,7 +1761,7 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/auth/send-email-verification-code',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
@@ -1774,7 +1777,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/auth/send-email-verification-code'
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -1859,10 +1862,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-auth-send-email-verification-code"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1906,7 +1909,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1928,7 +1931,7 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/auth/verify-email-address',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
@@ -1950,7 +1953,7 @@ payload = {
     "email_verification_token": "123456"
 }
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -2025,10 +2028,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-auth-verify-email-address"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2088,21 +2091,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
 
 const body = new FormData();
-body.append('name', 'Reichert PLC');
-body.append('email', 'dandre.hauck@shields.com');
-body.append('phone', '458-442-3517');
-body.append('website', 'http://brakus.com/');
-body.append('street', '8237 Nikolaus Port');
-body.append('city', 'Erniefurt');
-body.append('state', 'qui');
-body.append('zip_code', '09172');
-body.append('country', 'Grenada');
+body.append('name', 'Erdman-Adams');
+body.append('email', 'stroman.elizabeth@schowalter.com');
+body.append('phone', '315-329-3672');
+body.append('website', 'http://www.satterfield.com/non-vero-doloremque-atque-qui-ut');
+body.append('street', '807 Sadie Inlet');
+body.append('city', 'North Russell');
+body.append('state', 'et');
+body.append('zip_code', '31219-8671');
+body.append('country', 'Greece');
 body.append('logo', document.querySelector('input[name="logo"]').files[0]);
 
 fetch(url, {
@@ -2118,50 +2121,50 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/businesses',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'multipart/form-data',
             'Accept' =&gt; 'application/json',
         ],
         'multipart' =&gt; [
             [
                 'name' =&gt; 'name',
-                'contents' =&gt; 'Reichert PLC'
+                'contents' =&gt; 'Erdman-Adams'
             ],
             [
                 'name' =&gt; 'email',
-                'contents' =&gt; 'dandre.hauck@shields.com'
+                'contents' =&gt; 'stroman.elizabeth@schowalter.com'
             ],
             [
                 'name' =&gt; 'phone',
-                'contents' =&gt; '458-442-3517'
+                'contents' =&gt; '315-329-3672'
             ],
             [
                 'name' =&gt; 'website',
-                'contents' =&gt; 'http://brakus.com/'
+                'contents' =&gt; 'http://www.satterfield.com/non-vero-doloremque-atque-qui-ut'
             ],
             [
                 'name' =&gt; 'street',
-                'contents' =&gt; '8237 Nikolaus Port'
+                'contents' =&gt; '807 Sadie Inlet'
             ],
             [
                 'name' =&gt; 'city',
-                'contents' =&gt; 'Erniefurt'
+                'contents' =&gt; 'North Russell'
             ],
             [
                 'name' =&gt; 'state',
-                'contents' =&gt; 'qui'
+                'contents' =&gt; 'et'
             ],
             [
                 'name' =&gt; 'zip_code',
-                'contents' =&gt; '09172'
+                'contents' =&gt; '31219-8671'
             ],
             [
                 'name' =&gt; 'country',
-                'contents' =&gt; 'Grenada'
+                'contents' =&gt; 'Greece'
             ],
             [
                 'name' =&gt; 'logo',
-                'contents' =&gt; fopen('/tmp/phpM2a2R3', 'r')
+                'contents' =&gt; fopen('/tmp/php2uSZHy', 'r')
             ],
         ],
     ]
@@ -2176,21 +2179,21 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/businesses'
 files = {
-  'logo': open('/tmp/phpM2a2R3', 'rb')
+  'logo': open('/tmp/php2uSZHy', 'rb')
 }
 payload = {
-    "name": "Reichert PLC",
-    "email": "dandre.hauck@shields.com",
-    "phone": "458-442-3517",
-    "website": "http:\/\/brakus.com\/",
-    "street": "8237 Nikolaus Port",
-    "city": "Erniefurt",
-    "state": "qui",
-    "zip_code": "09172",
-    "country": "Grenada"
+    "name": "Erdman-Adams",
+    "email": "stroman.elizabeth@schowalter.com",
+    "phone": "315-329-3672",
+    "website": "http:\/\/www.satterfield.com\/non-vero-doloremque-atque-qui-ut",
+    "street": "807 Sadie Inlet",
+    "city": "North Russell",
+    "state": "et",
+    "zip_code": "31219-8671",
+    "country": "Greece"
 }
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'multipart/form-data',
   'Accept': 'application/json'
 }
@@ -2208,10 +2211,10 @@ response.json()</code></pre></div>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;id&quot;: null,
-    &quot;name&quot;: &quot;Howe-Witting&quot;,
-    &quot;email&quot;: &quot;jose97@goodwin.com&quot;,
-    &quot;phone&quot;: &quot;+14302419697&quot;,
-    &quot;website&quot;: &quot;http://www.torp.org/quae-nisi-non-perspiciatis-quo.html&quot;,
+    &quot;name&quot;: &quot;Zulauf, Corkery and Gislason&quot;,
+    &quot;email&quot;: &quot;gfay@hills.com&quot;,
+    &quot;phone&quot;: &quot;+19599597385&quot;,
+    &quot;website&quot;: &quot;http://conroy.info/&quot;,
     &quot;logo&quot;: null,
     &quot;created_at&quot;: null
 }</code>
@@ -2270,10 +2273,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-businesses"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2304,10 +2307,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-v1-businesses"
-               value="Reichert PLC"
+               value="Erdman-Adams"
                data-component="body">
     <br>
-<p>Business name. Must not be greater than 255 characters. Example: <code>Reichert PLC</code></p>
+<p>Business name. Must not be greater than 255 characters. Example: <code>Erdman-Adams</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -2315,10 +2318,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-businesses"
-               value="dandre.hauck@shields.com"
+               value="stroman.elizabeth@schowalter.com"
                data-component="body">
     <br>
-<p>Business email. Must be a valid email address. Must not be greater than 255 characters. Example: <code>dandre.hauck@shields.com</code></p>
+<p>Business email. Must be a valid email address. Must not be greater than 255 characters. Example: <code>stroman.elizabeth@schowalter.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -2326,10 +2329,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-v1-businesses"
-               value="458-442-3517"
+               value="315-329-3672"
                data-component="body">
     <br>
-<p>Business phone number. Must not be greater than 255 characters. Example: <code>458-442-3517</code></p>
+<p>Business phone number. Must not be greater than 255 characters. Example: <code>315-329-3672</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>website</code></b>&nbsp;&nbsp;
@@ -2337,10 +2340,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="website"                data-endpoint="POSTapi-v1-businesses"
-               value="http://brakus.com/"
+               value="http://www.satterfield.com/non-vero-doloremque-atque-qui-ut"
                data-component="body">
     <br>
-<p>Business website. Must be a valid URL. Must not be greater than 255 characters. Example: <code>http://brakus.com/</code></p>
+<p>Business website. Must be a valid URL. Must not be greater than 255 characters. Example: <code>http://www.satterfield.com/non-vero-doloremque-atque-qui-ut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>logo</code></b>&nbsp;&nbsp;
@@ -2351,7 +2354,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Business logo. Must be a file. Example: <code>/tmp/phpM2a2R3</code></p>
+<p>Business logo. Must be a file. Example: <code>/tmp/php2uSZHy</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>street</code></b>&nbsp;&nbsp;
@@ -2359,10 +2362,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="street"                data-endpoint="POSTapi-v1-businesses"
-               value="8237 Nikolaus Port"
+               value="807 Sadie Inlet"
                data-component="body">
     <br>
-<p>Business address: street. Example: <code>8237 Nikolaus Port</code></p>
+<p>Business address: street. Example: <code>807 Sadie Inlet</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>city</code></b>&nbsp;&nbsp;
@@ -2370,10 +2373,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="city"                data-endpoint="POSTapi-v1-businesses"
-               value="Erniefurt"
+               value="North Russell"
                data-component="body">
     <br>
-<p>Business address: city. This field is required when <code>street</code> is present. Example: <code>Erniefurt</code></p>
+<p>Business address: city. This field is required when <code>street</code> is present. Example: <code>North Russell</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>state</code></b>&nbsp;&nbsp;
@@ -2381,10 +2384,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="state"                data-endpoint="POSTapi-v1-businesses"
-               value="qui"
+               value="et"
                data-component="body">
     <br>
-<p>Business address: state or province. Example: <code>qui</code></p>
+<p>Business address: state or province. Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>zip_code</code></b>&nbsp;&nbsp;
@@ -2392,10 +2395,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="zip_code"                data-endpoint="POSTapi-v1-businesses"
-               value="09172"
+               value="31219-8671"
                data-component="body">
     <br>
-<p>Business address: zip code. Example: <code>09172</code></p>
+<p>Business address: zip code. Example: <code>31219-8671</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>country</code></b>&nbsp;&nbsp;
@@ -2403,10 +2406,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="country"                data-endpoint="POSTapi-v1-businesses"
-               value="Grenada"
+               value="Greece"
                data-component="body">
     <br>
-<p>Business address: country. This field is required when <code>street</code> is present. Example: <code>Grenada</code></p>
+<p>Business address: country. This field is required when <code>street</code> is present. Example: <code>Greece</code></p>
         </div>
         </form>
 
@@ -2420,7 +2423,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Endpoint for creating a new product category.</p>
 
 <span id="example-requests-POSTapi-v1-categories">
 <blockquote>Example request:</blockquote>
@@ -2432,14 +2435,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
     "name": "Manufacturing",
-    "description": "Animi nihil sapiente quia animi architecto ea veritatis."
+    "description": "Cumque recusandae et laudantium et hic omnis doloribus."
 };
 
 fetch(url, {
@@ -2455,13 +2458,13 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/categories',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
             'name' =&gt; 'Manufacturing',
-            'description' =&gt; 'Animi nihil sapiente quia animi architecto ea veritatis.',
+            'description' =&gt; 'Cumque recusandae et laudantium et hic omnis doloribus.',
         ],
     ]
 );
@@ -2476,10 +2479,10 @@ import json
 url = 'http://127.0.0.1:8000/api/v1/categories'
 payload = {
     "name": "Manufacturing",
-    "description": "Animi nihil sapiente quia animi architecto ea veritatis."
+    "description": "Cumque recusandae et laudantium et hic omnis doloribus."
 }
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -2490,7 +2493,49 @@ response.json()</code></pre></div>
 </span>
 
 <span id="example-responses-POSTapi-v1-categories">
-</span>
+            <blockquote>
+            <p>Example response (201, successful creation):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Category created successfully&quot;,
+    &quot;payload&quot;: {
+        &quot;id&quot;: &quot;01h1pg5sfcvm8crrx6qpn2eqfb&quot;,
+        &quot;name&quot;: &quot;FMG&quot;,
+        &quot;slug&quot;: &quot;fmg&quot;,
+        &quot;description&quot;: &quot;Quidem incidunt impedit quis aut veritatis ut.&quot;,
+        &quot;created_at&quot;: {
+            &quot;for_human&quot;: &quot;1 second ago&quot;,
+            &quot;for_machine&quot;: &quot;2023-05-30 14:14:46&quot;
+        }
+    }
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (400, generic error (400-500)):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;{ERROR_MESSAGE}&quot;,
+    &quot;payload&quot;: null
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (422, validation errors):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Invalid data encountered&quot;,
+    &quot;payload&quot;: {
+        &quot;{FIELD_1}&quot;: &quot;{Validation error for {FIELD_1}}&quot;,
+        &quot;{FIELD_2}&quot;: &quot;{Validation error for {FIELD_2}}&quot;
+    }
+}</code>
+ </pre>
+    </span>
 <span id="execution-results-POSTapi-v1-categories" hidden>
     <blockquote>Received response<span
                 id="execution-response-status-POSTapi-v1-categories"></span>:
@@ -2544,10 +2589,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-categories"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2589,12 +2634,253 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="description"                data-endpoint="POSTapi-v1-categories"
-               value="Animi nihil sapiente quia animi architecto ea veritatis."
+               value="Cumque recusandae et laudantium et hic omnis doloribus."
                data-component="body">
     <br>
-<p>The description of the category. Example: <code>Animi nihil sapiente quia animi architecto ea veritatis.</code></p>
+<p>The description of the category. Example: <code>Cumque recusandae et laudantium et hic omnis doloribus.</code></p>
         </div>
         </form>
+
+                    <h2 id="category-GETapi-v1-categories">Get all product categories</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Endpoint for retrieving all product categories.</p>
+
+<span id="example-requests-GETapi-v1-categories">
+<blockquote>Example request:</blockquote>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://127.0.0.1:8000/api/v1/categories"
+);
+
+const params = {
+    "per_page": "2",
+    "page": "1",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;get(
+    'http://127.0.0.1:8000/api/v1/categories',
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+        'query' =&gt; [
+            'per_page' =&gt; '2',
+            'page' =&gt; '1',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'http://127.0.0.1:8000/api/v1/categories'
+params = {
+  'per_page': '2',
+  'page': '1',
+}
+headers = {
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers, params=params)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-categories">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-api-version: 1.0
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: null,
+    &quot;payload&quot;: {
+        &quot;categories&quot;: [
+            {
+                &quot;id&quot;: &quot;01h27v3kgj3fqwhprr2xbrkz9c&quot;,
+                &quot;name&quot;: &quot;Manufacturing&quot;,
+                &quot;slug&quot;: &quot;manufacturing&quot;,
+                &quot;created_at&quot;: {
+                    &quot;for_human&quot;: &quot;5 hours ago&quot;,
+                    &quot;for_machine&quot;: &quot;2023-06-06 07:52:54&quot;
+                }
+            },
+            {
+                &quot;id&quot;: &quot;01h27v3s91gry5cr9kvt6m5rzq&quot;,
+                &quot;name&quot;: &quot;Farming&quot;,
+                &quot;slug&quot;: &quot;farming&quot;,
+                &quot;created_at&quot;: {
+                    &quot;for_human&quot;: &quot;5 hours ago&quot;,
+                    &quot;for_machine&quot;: &quot;2023-06-06 07:53:00&quot;
+                }
+            }
+        ],
+        &quot;pagination&quot;: {
+            &quot;total&quot;: 5,
+            &quot;current_page_total&quot;: 2,
+            &quot;per_page&quot;: 2,
+            &quot;current_page&quot;: 1,
+            &quot;has_more_pages&quot;: true
+        }
+    }
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (400, generic error (400-500)):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;{ERROR_MESSAGE}&quot;,
+    &quot;payload&quot;: null
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-categories" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-categories"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-categories"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-categories" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-categories">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-categories" data-method="GET"
+      data-path="api/v1/categories"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-categories', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-categories"
+                    onclick="tryItOut('GETapi-v1-categories');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-categories"
+                    onclick="cancelTryOut('GETapi-v1-categories');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-categories"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/categories</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-categories"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Content-Type"                data-endpoint="GETapi-v1-categories"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Accept"                data-endpoint="GETapi-v1-categories"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>per_page</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="number" style="display: none"
+               name="per_page"                data-endpoint="GETapi-v1-categories"
+               value="2"
+               data-component="query">
+    <br>
+<p>The number of items to return per page. Example: <code>2</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>page</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="number" style="display: none"
+               name="page"                data-endpoint="GETapi-v1-categories"
+               value="1"
+               data-component="query">
+    <br>
+<p>The page number. Example: <code>1</code></p>
+            </div>
+                </form>
 
                 <h1 id="product">PRODUCT</h1>
 
@@ -2606,7 +2892,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Endpoint for creating a new product.</p>
 
 <span id="example-requests-POSTapi-v1-products">
 <blockquote>Example request:</blockquote>
@@ -2618,17 +2904,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO",
+    "Authorization": "Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "name": "commodi",
+    "name": "aut",
     "average_price": 100,
-    "description": "Exercitationem qui ex architecto distinctio iure quis a ea.",
+    "description": "Et voluptates modi est esse.",
     "unit_of_measure": "kg",
-    "category_id": "5820a78e-930e-32fc-8b50-68c6b0987aa9"
+    "category_id": "5912c4cb-950a-37a4-91bf-d5354a7d181c"
 };
 
 fetch(url, {
@@ -2644,16 +2930,16 @@ $response = $client-&gt;post(
     'http://127.0.0.1:8000/api/v1/products',
     [
         'headers' =&gt; [
-            'Authorization' =&gt; 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+            'Authorization' =&gt; 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'commodi',
+            'name' =&gt; 'aut',
             'average_price' =&gt; 100.0,
-            'description' =&gt; 'Exercitationem qui ex architecto distinctio iure quis a ea.',
+            'description' =&gt; 'Et voluptates modi est esse.',
             'unit_of_measure' =&gt; 'kg',
-            'category_id' =&gt; '5820a78e-930e-32fc-8b50-68c6b0987aa9',
+            'category_id' =&gt; '5912c4cb-950a-37a4-91bf-d5354a7d181c',
         ],
     ]
 );
@@ -2667,14 +2953,14 @@ import json
 
 url = 'http://127.0.0.1:8000/api/v1/products'
 payload = {
-    "name": "commodi",
+    "name": "aut",
     "average_price": 100,
-    "description": "Exercitationem qui ex architecto distinctio iure quis a ea.",
+    "description": "Et voluptates modi est esse.",
     "unit_of_measure": "kg",
-    "category_id": "5820a78e-930e-32fc-8b50-68c6b0987aa9"
+    "category_id": "5912c4cb-950a-37a4-91bf-d5354a7d181c"
 }
 headers = {
-  'Authorization': 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO',
+  'Authorization': 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ',
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
@@ -2685,7 +2971,60 @@ response.json()</code></pre></div>
 </span>
 
 <span id="example-responses-POSTapi-v1-products">
-</span>
+            <blockquote>
+            <p>Example response (201, successful creation):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Product created successfully&quot;,
+    &quot;payload&quot;: {
+        &quot;id&quot;: &quot;01h1pg6bn3svmb7w13rptdr09q&quot;,
+        &quot;name&quot;: &quot;porro&quot;,
+        &quot;average_price&quot;: &quot;100&quot;,
+        &quot;unit_of_measure&quot;: &quot;kg&quot;,
+        &quot;description&quot;: &quot;Consequuntur et numquam omnis magnam iure dolores sint.&quot;,
+        &quot;created_at&quot;: {
+            &quot;for_human&quot;: &quot;1 second ago&quot;,
+            &quot;for_machine&quot;: &quot;2023-05-30 14:15:05&quot;
+        },
+        &quot;category&quot;: {
+            &quot;id&quot;: &quot;01h1pg5sfcvm8crrx6qpn2eqfb&quot;,
+            &quot;name&quot;: &quot;FMG&quot;,
+            &quot;slug&quot;: &quot;fmg&quot;,
+            &quot;description&quot;: &quot;Quidem incidunt impedit quis aut veritatis ut.&quot;,
+            &quot;created_at&quot;: {
+                &quot;for_human&quot;: &quot;19 seconds ago&quot;,
+                &quot;for_machine&quot;: &quot;2023-05-30 14:14:46&quot;
+            }
+        }
+    }
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (400, generic error (400-500)):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;{ERROR_MESSAGE}&quot;,
+    &quot;payload&quot;: null
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (422, validation errors):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Invalid data encountered&quot;,
+    &quot;payload&quot;: {
+        &quot;{FIELD_1}&quot;: &quot;{Validation error for {FIELD_1}}&quot;,
+        &quot;{FIELD_2}&quot;: &quot;{Validation error for {FIELD_2}}&quot;
+    }
+}</code>
+ </pre>
+    </span>
 <span id="execution-results-POSTapi-v1-products" hidden>
     <blockquote>Received response<span
                 id="execution-response-status-POSTapi-v1-products"></span>:
@@ -2739,10 +3078,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-products"
-               value="Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO"
+               value="Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO</code></p>
+<p>Example: <code>Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2773,10 +3112,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-v1-products"
-               value="commodi"
+               value="aut"
                data-component="body">
     <br>
-<p>The name of the product. Must not be greater than 255 characters. Example: <code>commodi</code></p>
+<p>The name of the product. Must not be greater than 255 characters. Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>average_price</code></b>&nbsp;&nbsp;
@@ -2795,10 +3134,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="description"                data-endpoint="POSTapi-v1-products"
-               value="Exercitationem qui ex architecto distinctio iure quis a ea."
+               value="Et voluptates modi est esse."
                data-component="body">
     <br>
-<p>The description of the product. Example: <code>Exercitationem qui ex architecto distinctio iure quis a ea.</code></p>
+<p>The description of the product. Example: <code>Et voluptates modi est esse.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>unit_of_measure</code></b>&nbsp;&nbsp;
@@ -2817,10 +3156,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="category_id"                data-endpoint="POSTapi-v1-products"
-               value="5820a78e-930e-32fc-8b50-68c6b0987aa9"
+               value="5912c4cb-950a-37a4-91bf-d5354a7d181c"
                data-component="body">
     <br>
-<p>The category id of the product. Example: <code>5820a78e-930e-32fc-8b50-68c6b0987aa9</code></p>
+<p>The category id of the product. Example: <code>5912c4cb-950a-37a4-91bf-d5354a7d181c</code></p>
         </div>
         </form>
 

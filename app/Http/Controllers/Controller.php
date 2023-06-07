@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Traits\ResourceCollectionTrait;
 use App\Traits\Responder;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -11,4 +12,5 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
     use Responder;
+    use ResourceCollectionTrait;
 }

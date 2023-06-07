@@ -1,0 +1,24 @@
+{
+    "message": "Product created successfully",
+    "payload": {
+        "id": "01h1pg6bn3svmb7w13rptdr09q",
+        "name": "porro",
+        "average_price": "100",
+        "unit_of_measure": "kg",
+        "description": "Consequuntur et numquam omnis magnam iure dolores sint.",
+        "created_at": {
+            "for_human": "1 second ago",
+            "for_machine": "2023-05-30 14:15:05"
+        },
+        "category": {
+            "id": "01h1pg5sfcvm8crrx6qpn2eqfb",
+            "name": "FMG",
+            "slug": "fmg",
+            "description": "Quidem incidunt impedit quis aut veritatis ut.",
+            "created_at": {
+                "for_human": "19 seconds ago",
+                "for_machine": "2023-05-30 14:14:46"
+            }
+        }
+    }
+}

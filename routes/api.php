@@ -14,8 +14,9 @@ use App\Http\Controllers\Api\Auth\Actions\{
 use App\Http\Controllers\Api\Business\Actions\{
     CreateBusinessController
 };
-use App\Http\Controllers\Api\Category\Actions\{
-    CreateCategoryController
+use App\Http\Controllers\Api\Category\{
+    Actions\CreateCategoryController,
+    Fetch\GetCategoriesController
 };
 use App\Http\Controllers\Api\Product\Actions\{
     CreateProductController
@@ -72,6 +73,9 @@ Route::middleware(['auth:sanctum', 'refresh.token'])->group(function () {
 
     Route::prefix('categories')->group(function () {
         Route::post('/', CreateCategoryController::class)->name('create-category');
+        Route::get('/', GetCategoriesController::class)
+            ->withoutMiddleware(['auth:sanctum', 'refresh.token'])
+            ->name('get-categories');
     });
 
     Route::prefix('products')->group(function () {

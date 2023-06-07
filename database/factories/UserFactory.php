@@ -25,8 +25,10 @@ class UserFactory extends Factory
         ];
     }
 
-    public function addRole(string $role): static
+    public function addRole(string $role = "customer"): static
     {
+        $roles = config("auth.roles");
+        $role = $role ?? collect($roles)->random();
         return $this->afterCreating(fn (User $user) => $user->addRole($role));
     }
 }

@@ -18,6 +18,12 @@ class CreateProductController extends Controller
 {
     /**
      * Create product
+     * 
+     * Endpoint for creating a new product.
+     * 
+     * @responseFile status=201 scenario='successful creation' storage/responses/create_product.json
+     * @responseFile status=422 scenario='validation errors' storage/responses/validation_errors.json
+     * @responseFile status=400 scenario='generic error (400-500)' storage/responses/generic_error.json
      */
     public function __invoke(CreateProductRequest $request): JsonResponse
     {

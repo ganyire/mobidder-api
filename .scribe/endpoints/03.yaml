@@ -15,11 +15,11 @@ endpoints:
       subgroup: ''
       subgroupDescription: ''
       title: 'Create product'
-      description: ''
+      description: 'Endpoint for creating a new product.'
       authenticated: true
       custom: []
     headers:
-      Authorization: 'Bearer 4|qRYeEW1rvWPN2Sjgtko2FF0gE6gUzc9lcqdUDWGO'
+      Authorization: 'Bearer 38|NCg3209E9muRYFLCqqlBOs9cFll3yrcgSBxw0IqQ'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -31,7 +31,7 @@ endpoints:
         name: name
         description: 'The name of the product. Must not be greater than 255 characters.'
         required: true
-        example: commodi
+        example: aut
         type: string
         custom: []
       average_price:
@@ -45,7 +45,7 @@ endpoints:
         name: description
         description: 'The description of the product.'
         required: false
-        example: 'Exercitationem qui ex architecto distinctio iure quis a ea.'
+        example: 'Et voluptates modi est esse.'
         type: string
         custom: []
       unit_of_measure:
@@ -59,22 +59,75 @@ endpoints:
         name: category_id
         description: 'The category id of the product.'
         required: true
-        example: 5820a78e-930e-32fc-8b50-68c6b0987aa9
+        example: 5912c4cb-950a-37a4-91bf-d5354a7d181c
         type: string
         custom: []
     cleanBodyParameters:
-      name: commodi
+      name: aut
       average_price: 100.0
-      description: 'Exercitationem qui ex architecto distinctio iure quis a ea.'
+      description: 'Et voluptates modi est esse.'
       unit_of_measure: kg
-      category_id: 5820a78e-930e-32fc-8b50-68c6b0987aa9
+      category_id: 5912c4cb-950a-37a4-91bf-d5354a7d181c
     fileParameters: []
-    responses: []
+    responses:
+      -
+        status: 201
+        content: |
+          {
+              "message": "Product created successfully",
+              "payload": {
+                  "id": "01h1pg6bn3svmb7w13rptdr09q",
+                  "name": "porro",
+                  "average_price": "100",
+                  "unit_of_measure": "kg",
+                  "description": "Consequuntur et numquam omnis magnam iure dolores sint.",
+                  "created_at": {
+                      "for_human": "1 second ago",
+                      "for_machine": "2023-05-30 14:15:05"
+                  },
+                  "category": {
+                      "id": "01h1pg5sfcvm8crrx6qpn2eqfb",
+                      "name": "FMG",
+                      "slug": "fmg",
+                      "description": "Quidem incidunt impedit quis aut veritatis ut.",
+                      "created_at": {
+                          "for_human": "19 seconds ago",
+                          "for_machine": "2023-05-30 14:14:46"
+                      }
+                  }
+              }
+          }
+        headers: []
+        description: 'successful creation'
+        custom: []
+      -
+        status: 400
+        content: |
+          {
+              "message": "{ERROR_MESSAGE}",
+              "payload": null
+          }
+        headers: []
+        description: 'generic error (400-500)'
+        custom: []
+      -
+        status: 422
+        content: |
+          {
+              "message": "Invalid data encountered",
+              "payload": {
+                  "{FIELD_1}": "{Validation error for {FIELD_1}}",
+                  "{FIELD_2}": "{Validation error for {FIELD_2}}"
+              }
+          }
+        headers: []
+        description: 'validation errors'
+        custom: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer a1eadZDb543fk6E8cVhPgv6'
+      - 'Bearer df5hZ1eavDaEV66b4k3cg8P'
     controller: null
     method: null
     route: null

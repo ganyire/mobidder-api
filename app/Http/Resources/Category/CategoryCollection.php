@@ -1,12 +1,12 @@
 <?php
 
-namespace {{ namespace }};
+namespace App\Http\Resources\Category;
 
 use App\Traits\ResourceCollectionTrait;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class {{ class }} extends ResourceCollection
+class CategoryCollection extends ResourceCollection
 {
 
     use ResourceCollectionTrait;
@@ -27,10 +27,10 @@ class {{ class }} extends ResourceCollection
      *
      * @return array<int|string, mixed>
      */
-    public function toArray(Request $request): array
+    public function toArray(Request $request)
     {
         return  [
-            'data' => $this->collection,
+            'categories' => $this->collection,
             'pagination' => $this->withPagination($request),
         ];
     }

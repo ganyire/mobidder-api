@@ -1,0 +1,13 @@
+{
+    "message": "Category created successfully",
+    "payload": {
+        "id": "01h1pg5sfcvm8crrx6qpn2eqfb",
+        "name": "FMG",
+        "slug": "fmg",
+        "description": "Quidem incidunt impedit quis aut veritatis ut.",
+        "created_at": {
+            "for_human": "1 second ago",
+            "for_machine": "2023-05-30 14:14:46"
+        }
+    }
+}

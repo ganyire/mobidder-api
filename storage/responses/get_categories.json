@@ -1,0 +1,32 @@
+{
+    "message": null,
+    "payload": {
+        "categories": [
+            {
+                "id": "01h27v3kgj3fqwhprr2xbrkz9c",
+                "name": "Manufacturing",
+                "slug": "manufacturing",
+                "created_at": {
+                    "for_human": "5 hours ago",
+                    "for_machine": "2023-06-06 07:52:54"
+                }
+            },
+            {
+                "id": "01h27v3s91gry5cr9kvt6m5rzq",
+                "name": "Farming",
+                "slug": "farming",
+                "created_at": {
+                    "for_human": "5 hours ago",
+                    "for_machine": "2023-06-06 07:53:00"
+                }
+            }
+        ],
+        "pagination": {
+            "total": 5,
+            "current_page_total": 2,
+            "per_page": 2,
+            "current_page": 1,
+            "has_more_pages": true
+        }
+    }
+}

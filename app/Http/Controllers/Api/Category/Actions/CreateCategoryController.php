@@ -18,6 +18,12 @@ class CreateCategoryController extends Controller
 {
     /**
      * Create new product category
+     * 
+     * Endpoint for creating a new product category.
+     * 
+     * @responseFile status=201 scenario='successful creation' storage/responses/create_category.json
+     * @responseFile status=422 scenario='validation errors' storage/responses/validation_errors.json
+     * @responseFile status=400 scenario='generic error (400-500)' storage/responses/generic_error.json
      */
     public function __invoke(CreateCategoryRequest $request): JsonResponse
     {
